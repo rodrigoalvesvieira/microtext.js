@@ -3,6 +3,8 @@ microtext.js
 
 A micro JavaScript utility for processing text. Currently with only four functions.
 
+Note: this library is only beginning and the author intends to make a great set of text utilities within it yet. Keep up.
+
 Usage
 -----
 
@@ -15,7 +17,7 @@ Microtext.abbrevName("Hari Seldon"); // "Hari S."
 
 Microtext.lastName("Salvor Hardin"); // "Hardin"
 
-Microtext.getInitials("Bor Alurin"); // B. A.
+Microtext.getInitials("Bor Alurin"); // "B. A"
 
 ```
 
