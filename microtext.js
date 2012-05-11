@@ -13,6 +13,48 @@ var Microtext = {
   }
 }
 
+// Breaks the String instance into an array
+// returns one of its words that match a given 
+// positions.
+String.prototype.nameAt = function(pos) {
+  var brokenNames = Microtext.breakSentence(this);
+  return brokenNames[pos];
+}
+
+// Takes a sentence and returns its first word
+Microtext.firstName = function(names) {
+  var brokenNames = Microtext.breakSentence(names);
+  return brokenNames[0];
+}
+
+// Takes a sentence (i.e a full person name) as argument and returns
+// its first part a.k.a the first name
+Microtext.lastName = function(sentence) {
+  var brokenNames = Microtext.breakSentence(sentence);
+  if (brokenNames.length > 1) {
+    return brokenNames[brokenNames.length -1];
+  }
+  else if (brokenNames.length === 1) {
+    return Microtext.firstName(sentence);
+  }
+}
+
+// Takes a sentence as argument and returns the initials of
+// the terms of the given sentence
+Microtext.getInitials = function(expr) {
+  var brokenNames = Microtext.breakSentence(expr),
+      nameList = [];
+  
+  brokenNames.forEach(function(name) {
+    nameList.push(name.charAt(0));
+  });
+  
+  if (nameList.length > 1) {
+    var abbrevName = nameList.toString().toUpperCase();
+    return abbrevName.replace(/\,/g, ". ");  
+  }
+}
+
 // Takes a sentence (i.e a full person name) as argument 
 // and return that string in
 // abbreviated form. Usage example:
@@ -25,39 +67,6 @@ Microtext.abbrevName = function(expr) {
     return(brokenNames[0] + " " + brokenNames[1].charAt(0) + ".");
   }
   else {
-    return(brokenNames[0]);
-  }
-}
-
-
-// Takes a sentence (i.e a full person name) as argument and returns
-// its first part a.k.a the first name
-Microtext.lastName = function(expr) {
-  var brokenNames = Microtext.breakSentence(expr);
-  if (brokenNames.length > 1) {
-    return(brokenNames[brokenNames.length -1]);
-  }
-  else {
-    return("");
-  }
-}
-
-
-// Takes a sentence as argument and returns the initials of
-// the terms of the given sentence
-Microtext.getInitials = function(expr) {
-  var brokenNames = Microtext.breakSentence(expr);    
-  var nameList = [];
-  
-  brokenNames.forEach(function(name) {
-    nameList.push(name.charAt(0));
-  });
-  
-  if (nameList.length > 1) {
-    var abbrevName = nameList.toString().toUpperCase();
-    return abbrevName.replace(/\,/g, ". ");  
-  }
-  else {
-    return "";
+    return brokenNames[0];
   }
 }

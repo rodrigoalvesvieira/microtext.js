@@ -8,12 +8,15 @@ Note: this library is only beginning and the author intends to make a great set 
 Usage
 -----
 
-```javascript
+### Microtext object functions:
 
+```javascript
 
 Microtext.breakSentence("Gaal Dornick"); // ["Gaal", "Dornick"]
 
 Microtext.abbrevName("Hari Seldon"); // "Hari S."
+
+Microtext.firstName("Lors Avakim"); // "Lors"
 
 Microtext.lastName("Salvor Hardin"); // "Hardin"
 
@@ -21,10 +24,19 @@ Microtext.getInitials("Bor Alurin"); // "B. A"
 
 ```
 
+### String instance methods
+
+```javascript
+
+"Anselm haut Rodric".nameAt(2) // "Rodric"
+"Anselm haut Rodric".nameAt(3) // undefined
+
+```
+
 Licence
 -------
 
-Copyright (c) 2012 Rodrigo Vieira. http://www.rodrigoalvesvieira.com/
+Copyright (c) 2012 Rodrigo Alves Vieira. http://www.rodrigoalvesvieira.com/
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
