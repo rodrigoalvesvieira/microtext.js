@@ -14,6 +14,8 @@ Usage
 
 Microtext.breakSentence("Gaal Dornick"); // ["Gaal", "Dornick"]
 
+Microtext.truncate("Lewis Pirenne", 10) // "Lewis Pire..."
+
 Microtext.abbrevName("Hari Seldon"); // "Hari S."
 
 Microtext.firstName("Lors Avakim"); // "Lors"
