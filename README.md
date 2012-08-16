@@ -1,7 +1,7 @@
 microtext.js
 =========
 
-A micro JavaScript utility for processing text. Currently with only four functions.
+A micro JavaScript utility for processing text. Currently with only six functions.
 
 Note: this library is only beginning and the author intends to make a great set of text utilities within it yet. Keep up.
 
@@ -34,6 +34,10 @@ Microtext.getInitials("Bor Alurin"); // "B. A"
 "Anselm haut Rodric".nameAt(3) // undefined
 
 ```
+
+### Auhor
+
+  * Rodrigo Alves Vieira - rodrigovieira1994 [at] gmail [dot] com - http://www.rodrigoalvesvieira.com
 
 Licence
 -------
