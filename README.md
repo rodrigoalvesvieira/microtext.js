@@ -35,6 +35,18 @@ Microtext.getInitials("Bor Alurin"); // "B. A"
 
 ```
 
+### Handlebars.js
+
+Microtext.js functions can also be used as plain Handlebars.js helpers:
+
+```ruby
+
+{{ getInitials "Isaac Newton" }}
+
+{{ abbrevName "Albert Einstein" }}
+
+```
+
 ### Auhor
 
   * Rodrigo Alves Vieira - rodrigovieira1994 [at] gmail [dot] com - http://www.rodrigoalvesvieira.com
@@ -46,7 +58,7 @@ Copyright (c) 2012 Rodrigo Alves Vieira. http://www.rodrigoalvesvieira.com/
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
-"Software"), to use, copy and modify copies of the Software, subject 
+"Software"), to use, copy and modify copies of the Software, subject
 to the following conditions:
 
 The above copyright notice and this permission notice shall be

@@ -1,3 +1,11 @@
+/**
+ * Microtext.js
+ *
+ * Copyright 2012, Rodrigo Alves Vieira
+ * Licensed under MIT
+ *
+*/
+
 Handlebars.registerHelper('breakSentence', function(sentence) {
   return sentence.trim().split(" ");
 });
@@ -15,12 +23,12 @@ Handlebars.registerHelper('firstName', function(names) {
 
 Handlebars.registerHelper('lastName', function(names) {
   var brokenNames = Handlebars.helpers.breakSentence(names);
-    if (brokenNames.length > 1) {
-      return brokenNames[brokenNames.length -1];
-    }
-    else if (brokenNames.length === 1) {
-      return Handlebars.helpers.firstName(names);
-    }
+  if (brokenNames.length > 1) {
+    return brokenNames[brokenNames.length -1];
+  }
+  else if (brokenNames.length === 1) {
+    return Handlebars.helpers.firstName(names);
+  }
 });
 
 Handlebars.registerHelper('getInitials', function(expr) {
@@ -28,11 +36,11 @@ Handlebars.registerHelper('getInitials', function(expr) {
       nameList = [];
 
   brokenNames.forEach(function(name) {
-      nameList.push(name.charAt(0));
+    nameList.push(name.charAt(0));
   });
 
   if (nameList.length > 1) {
-      var abbrevName = nameList.toString().toUpperCase();
-      return abbrevName.replace(/\,/g, ". ");
+    var abbrevName = nameList.toString().toUpperCase();
+    return abbrevName.replace(/\,/g, ". ");
   }
 });
