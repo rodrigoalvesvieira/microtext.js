@@ -24,6 +24,8 @@ Microtext.lastName("Salvor Hardin"); // "Hardin"
 
 Microtext.getInitials("Bor Alurin"); // "B. A"
 
+Microtext.capitalize("foundation"); // "Foundation"
+
 ```
 
 ### String instance methods
@@ -47,7 +49,7 @@ Microtext.js functions can also be used as plain Handlebars.js helpers:
 
 ```
 
-### Auhor
+### Author
 
   * Rodrigo Alves Vieira - rodrigovieira1994 [at] gmail [dot] com - http://www.rodrigoalvesvieira.com
 
