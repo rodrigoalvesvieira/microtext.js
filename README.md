@@ -1,12 +1,10 @@
-microtext.js
-=========
+# microtext.js
 
 A micro JavaScript utility for processing text. Currently with only seven functions.
 
 Note: this library is only beginning and the author intends to make a great set of text utilities within it yet. Keep up.
 
-Usage
------
+## Usage
 
 ### Microtext object functions:
 
@@ -49,12 +47,11 @@ Microtext.js functions can also be used as plain Handlebars.js helpers:
 
 ```
 
-### Author
+## Author
 
   * Rodrigo Alves Vieira - rodrigovieira1994 [at] gmail [dot] com - http://www.rodrigoalvesvieira.com
 
-Licence
--------
+## Licence
 
 Copyright (c) 2012 Rodrigo Alves Vieira. http://www.rodrigoalvesvieira.com/
 
