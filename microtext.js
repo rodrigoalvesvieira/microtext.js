@@ -145,3 +145,31 @@ Microtext.capitalize = function (expr) {
     var capitalizedExpr = expr.charAt(0).toUpperCase() + expr.slice(1);
     return capitalizedExpr;
 };
+
+/**
+ * A function that takes an expression and turns it into a
+ * HTML <p> tag, optionally taking a class.
+ *
+ * Microtext.simpleFormat("Sef Sermak"); // returns "<p>Sef Sermak</p>"
+ * Microtext.simpleFormat("Sef Sermak", { className: "character" }); // returns "<p class='character'>Sef Sermak</p>"
+ * @module microtext
+ * @method simpleFormat
+ * @param {String} a text expression
+ * @return {String} an HTML <p> tag surrounding that expression.
+ * Optionally, also with a HTML class attribute defined.
+
+ */
+
+Microtext.simpleFormat = function (expr, htmlOptions) {
+    "use strict";
+    var options = htmlOptions || {},
+        className = options.className,
+        outputString;
+
+    if (className !== undefined) {
+        outputString = "<p class='" + className + "'>" + expr + "</p>";
+        return outputString;
+    }
+
+    return "<p>" + expr + "</p>";
+};

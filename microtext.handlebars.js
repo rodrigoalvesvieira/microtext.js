@@ -57,3 +57,17 @@ Handlebars.registerHelper('capitalize', function (expr) {
     var capitalizedExpr = expr.charAt(0).toUpperCase() + expr.slice(1);
     return capitalizedExpr;
 });
+
+Handlebars.registerHelper('simpleFormat', function (expr, htmlOptions) {
+    "use strict";
+    var options = htmlOptions || {},
+        className = options.className,
+        outputString;
+
+    if (className !== undefined) {
+        outputString = "<p class='" + className + "'>" + expr + "</p>";
+        return outputString;
+    }
+
+    return "<p>" + expr + "</p>";
+});

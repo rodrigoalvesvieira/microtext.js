@@ -24,6 +24,10 @@ Microtext.getInitials("Bor Alurin"); // "B. A"
 
 Microtext.capitalize("foundation"); // "Foundation"
 
+Microtext.simpleFormat("Sef Sermak"); // returns "<p>Sef Sermak</p>"
+
+Microtext.simpleFormat("Sef Sermak", { className: "character" }); // returns "<p class='character'>Sef Sermak</p>"
+
 ```
 
 ### String instance methods
