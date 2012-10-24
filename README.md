@@ -2,7 +2,7 @@
 
 A micro JavaScript utility for processing text. Currently with only seven functions.
 
-Note: this library is only beginning and the author intends to make a great set of text utilities within it yet. Keep up.
+[![Build Status](https://secure.travis-ci.org/rodrigoalvesvieira/microtext.js.png)](http://travis-ci.org/rodrigoalvesvieira/microtext.js)
 
 ## Usage
 
