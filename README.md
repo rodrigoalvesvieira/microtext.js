@@ -35,8 +35,8 @@ Microtext.simpleFormat("Sef Sermak", { className: "character" }); // returns "<p
 ```javascript
 
 "Anselm haut Rodric".nameAt(2) // "Rodric"
-"Anselm haut Rodric".nameAt(3) // undefined
 
+"Anselm haut Rodric".nameAt(3) // undefined
 ```
 
 ### Handlebars.js
