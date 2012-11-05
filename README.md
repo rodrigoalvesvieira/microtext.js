@@ -27,7 +27,6 @@ Microtext.capitalize("foundation"); // "Foundation"
 Microtext.simpleFormat("Sef Sermak"); // returns "<p>Sef Sermak</p>"
 
 Microtext.simpleFormat("Sef Sermak", { className: "character" }); // returns "<p class='character'>Sef Sermak</p>"
-
 ```
 
 ### String instance methods
@@ -48,7 +47,6 @@ Microtext.js functions can also be used as plain Handlebars.js helpers:
 {{ getInitials "Isaac Newton" }}
 
 {{ abbrevName "Albert Einstein" }}
-
 ```
 
 ## Author
