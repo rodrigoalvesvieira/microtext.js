@@ -142,8 +142,16 @@ Microtext.abbrevName = function (expr) {
  */
 Microtext.capitalize = function (expr) {
     "use strict";
-    var capitalizedExpr = expr.charAt(0).toUpperCase() + expr.slice(1);
-    return capitalizedExpr;
+    var capitalized;
+    if (expr !== undefined) {
+        if (expr.constructor === String) {
+            capitalized = expr.charAt(0).toUpperCase() + expr.slice(1);
+        } else {
+            capitalized = expr.toString();
+        }
+    }
+
+    return capitalized;
 };
 
 /**
