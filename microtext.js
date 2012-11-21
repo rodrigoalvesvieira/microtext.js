@@ -184,7 +184,7 @@ Microtext.simpleFormat = function (expr, htmlOptions) {
  * A function that extracts an excerpt from expression that matches
  * the first instance of phrase.
  *
- * Microtext.excerpt("Who is John Galt?", "John"); // returns "<p>Sef Sermak</p>"
+ * Microtext.excerpt("Who is John Galt?", "John"); // returns "...John Galt?..."
  * @module microtext
  * @method excerpt
  * @param {String} a text expression
@@ -196,7 +196,6 @@ Microtext.excerpt = function (expr, phrase) {
         outputString;
 
     if (typeof startPos === "number") {
-        console.log("yup");
         return "..." + expr.substr(startPos) + "...";
     }
 
