@@ -27,6 +27,8 @@ Microtext.capitalize("foundation"); // "Foundation"
 Microtext.simpleFormat("Sef Sermak"); // returns "<p>Sef Sermak</p>"
 
 Microtext.simpleFormat("Sef Sermak", { className: "character" }); // returns "<p class='character'>Sef Sermak</p>"
+
+Microtext.excerpt("Who is John Galt?", "John"); // returns "...John Galt?..."
 ```
 
 ### String instance methods
