@@ -71,3 +71,18 @@ Handlebars.registerHelper('simpleFormat', function (expr, htmlOptions) {
 
     return "<p>" + expr + "</p>";
 });
+
+Handlebars.registerHelper('excerpt', function (expr, phrase) {
+    "use strict";
+    var phrase = phrase,
+        startPos = expr.indexOf(phrase),
+        outputString;
+
+    if (typeof startPos === "number") {
+        console.log("yup");
+        return "..." + expr.substr(startPos) + "..."
+    }
+
+    outputString = expr;
+    return outputString;
+});

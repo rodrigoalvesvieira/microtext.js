@@ -165,9 +165,7 @@ Microtext.capitalize = function (expr) {
  * @param {String} a text expression
  * @return {String} an HTML <p> tag surrounding that expression.
  * Optionally, also with a HTML class attribute defined.
-
  */
-
 Microtext.simpleFormat = function (expr, htmlOptions) {
     "use strict";
     var options = htmlOptions || {},
@@ -180,4 +178,29 @@ Microtext.simpleFormat = function (expr, htmlOptions) {
     }
 
     return "<p>" + expr + "</p>";
+};
+
+/**
+ * A function that extracts an excerpt from expression that matches
+ * the first instance of phrase.
+ *
+ * Microtext.excerpt("Who is John Galt?", "John"); // returns "<p>Sef Sermak</p>"
+ * @module microtext
+ * @method excerpt
+ * @param {String} a text expression
+ * @return {String} a phrase which is supposed to be part of the initial expression.
+ */
+Microtext.excerpt = function (expr, phrase) {
+    "use strict";
+    var phrase = phrase,
+        startPos = expr.indexOf(phrase),
+        outputString;
+
+    if (typeof startPos === "number") {
+        console.log("yup");
+        return "..." + expr.substr(startPos) + "..."
+    }
+
+    outputString = expr;
+    return outputString;
 };
