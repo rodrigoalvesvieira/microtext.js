@@ -74,13 +74,12 @@ Handlebars.registerHelper('simpleFormat', function (expr, htmlOptions) {
 
 Handlebars.registerHelper('excerpt', function (expr, phrase) {
     "use strict";
-    var phrase = phrase,
-        startPos = expr.indexOf(phrase),
+    var startPos = expr.indexOf(phrase),
         outputString;
 
     if (typeof startPos === "number") {
         console.log("yup");
-        return "..." + expr.substr(startPos) + "..."
+        return "..." + expr.substr(startPos) + "...";
     }
 
     outputString = expr;
