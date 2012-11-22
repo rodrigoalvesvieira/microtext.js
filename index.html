@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Microtext.js by rodrigoalvesvieira</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Microtext.js</h1>
+        <h2>A micro JavaScript utility for processing text</h2>
+        <a href="https://github.com/rodrigoalvesvieira/microtext.js" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>microtext.js</h1>
+
+<p>A micro JavaScript utility for processing text. Currently with only seven functions.</p>
+
+<p>Note: this library is only beginning and the author intends to make a great set of text utilities within it yet. Keep up.</p>
+
+<h2>Usage</h2>
+
+<h3>Microtext object functions:</h3>
+
+<div class="highlight"><pre>
+<span class="nx">Microtext</span><span class="p">.</span><span class="nx">breakSentence</span><span class="p">(</span><span class="s2">"Gaal Dornick"</span><span class="p">);</span> <span class="c1">// ["Gaal", "Dornick"]</span>
+
+<span class="nx">Microtext</span><span class="p">.</span><span class="nx">truncate</span><span class="p">(</span><span class="s2">"Lewis Pirenne"</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="c1">// "Lewis Pire..."</span>
+
+<span class="nx">Microtext</span><span class="p">.</span><span class="nx">abbrevName</span><span class="p">(</span><span class="s2">"Hari Seldon"</span><span class="p">);</span> <span class="c1">// "Hari S."</span>
+
+<span class="nx">Microtext</span><span class="p">.</span><span class="nx">firstName</span><span class="p">(</span><span class="s2">"Lors Avakim"</span><span class="p">);</span> <span class="c1">// "Lors"</span>
+
+<span class="nx">Microtext</span><span class="p">.</span><span class="nx">lastName</span><span class="p">(</span><span class="s2">"Salvor Hardin"</span><span class="p">);</span> <span class="c1">// "Hardin"</span>
+
+<span class="nx">Microtext</span><span class="p">.</span><span class="nx">getInitials</span><span class="p">(</span><span class="s2">"Bor Alurin"</span><span class="p">);</span> <span class="c1">// "B. A"</span>
+
+<span class="nx">Microtext</span><span class="p">.</span><span class="nx">capitalize</span><span class="p">(</span><span class="s2">"foundation"</span><span class="p">);</span> <span class="c1">// "Foundation"</span>
+
+<span class="nx">Microtext</span><span class="p">.</span><span class="nx">simpleFormat</span><span class="p">(</span><span class="s2">"Sef Sermak"</span><span class="p">);</span> <span class="c1">// "<p>Sef Sermak</p>"</span>
+
+<span class="nx">Microtext</span><span class="p">.</span><span class="nx">simpleFormat</span><span class="p">(</span><span class="s2">"Sef Sermak"</span><span class="p">,</span> <span class="p">{</span> <span class="nx">className</span><span class="o">:</span> <span class="s2">"character"</span> <span class="p">});</span> <span class="c1">// returns "&lt;p class='character'&gt;Sef Sermak&lt;/p&gt;"</span>
+
+</pre></div>
+
+<h3>String instance methods</h3>
+
+<div class="highlight"><pre>
+<span class="s2">"Anselm haut Rodric"</span><span class="p">.</span><span class="nx">nameAt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="c1">// "Rodric"</span>
+<span class="s2">"Anselm haut Rodric"</span><span class="p">.</span><span class="nx">nameAt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="c1">// undefined</span>
+
+</pre></div>
+
+<h3>Handlebars.js</h3>
+
+<p>Microtext.js functions can also be used as plain Handlebars.js helpers:</p>
+
+<div class="highlight"><pre>
+<span class="p">{{</span> <span class="n">getInitials</span> <span class="s2">"Isaac Newton"</span> <span class="p">}}</span>
+
+<span class="p">{{</span> <span class="n">abbrevName</span> <span class="s2">"Albert Einstein"</span> <span class="p">}}</span>
+
+</pre></div>
+
+<h2>Author</h2>
+
+<ul>
+<li>Rodrigo Alves Vieira - rodrigovieira1994 [at] gmail [dot] com - <a href="http://www.rodrigoalvesvieira.com">http://www.rodrigoalvesvieira.com</a>
+</li>
+</ul><h2>Licence</h2>
+
+<p>Copyright (c) 2012 Rodrigo Alves Vieira. <a href="http://www.rodrigoalvesvieira.com/">http://www.rodrigoalvesvieira.com/</a></p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to use, copy and modify copies of the Software, subject
+to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/rodrigoalvesvieira/microtext.js/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/rodrigoalvesvieira/microtext.js/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/rodrigoalvesvieira/microtext.js"></a> is maintained by <a href="https://github.com/rodrigoalvesvieira">rodrigoalvesvieira</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-35246742-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
