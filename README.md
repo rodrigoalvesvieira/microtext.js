@@ -1,6 +1,8 @@
 # microtext.js
 
-A micro JavaScript utility for processing text. Currently with only seven functions.
+A micro JavaScript utility for processing text. Currently with only 9 functions.
+
+NOTE: the purpose of this project is to provide simple and useful text processing functions to the web developer's toolset. Please read the [Contributions] section for more information about this.
 
 [![Build Status](https://secure.travis-ci.org/rodrigoalvesvieira/microtext.js.png)](http://travis-ci.org/rodrigoalvesvieira/microtext.js)
 
@@ -82,3 +84,4 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 [this blog post]: http://www.rodrigoalvesvieira.com/how-to-contribute-open-source/
+[Contributions]: /contributions
