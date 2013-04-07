@@ -204,7 +204,7 @@ Microtext.excerpt = function (expr, phrase) {
 };
 
 /**
- * A function for partially hiding email addresses and prevent collection
+ * A function for partially hiding email addresses and prevent collection from bots and similar mechanisms
  * @module microtext
  * @method hideEmail
  * @param {String} an email address
