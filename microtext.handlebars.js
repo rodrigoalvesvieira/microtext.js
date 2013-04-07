@@ -1,7 +1,7 @@
 /**
  * Microtext.js
  *
- * Copyright 2012, Rodrigo Alves Vieira
+ * Copyright 2012-2013, Rodrigo Alves Vieira
  * Licensed under MIT
  *
 */
@@ -84,4 +84,19 @@ Handlebars.registerHelper('excerpt', function (expr, phrase) {
 
     outputString = expr;
     return outputString;
+});
+
+
+Handlebars.registerHelper('hideEmail', function (email) {
+    "use strict";
+
+    var avg, splitted, firstPart, secondPart, finalStr;
+    splitted = email.split("@");
+    firstPart = splitted[0];
+    avg = (firstPart.length / 2);
+    firstPart = firstPart.substring(0, (firstPart.length - avg))
+    secondPart = splitted[1];
+
+    finalStr = firstPart + "...@" + secondPart;
+    return finalStr;
 });

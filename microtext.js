@@ -1,7 +1,7 @@
 /**
  * Microtext.js
  *
- * Copyright 2012, Rodrigo Alves Vieira
+ * Copyright 2012-2013, Rodrigo Alves Vieira
  * Licensed under MIT
  *
  * @module microtext
@@ -201,4 +201,28 @@ Microtext.excerpt = function (expr, phrase) {
 
     outputString = expr;
     return outputString;
+};
+
+/**
+ * A function for partially hiding email addresses and prevent collection
+ * @module microtext
+ * @method hideEmail
+ * @param {String} an email address
+ * @return {String} a partially hidden string correspondent to the informed email address
+ *
+ * Example:
+ * "rodrigo@example.com" becomes "rod...@example.com"
+*/
+Microtext.hideEmail = function (email) {
+    "use strict";
+
+    var avg, splitted, firstPart, secondPart, finalStr;
+    splitted = email.split("@");
+    firstPart = splitted[0];
+    avg = (firstPart.length / 2);
+    firstPart = firstPart.substring(0, (firstPart.length - avg))
+    secondPart = splitted[1];
+
+    finalStr = firstPart + "...@" + secondPart;
+    return finalStr;
 };

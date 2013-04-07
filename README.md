@@ -31,6 +31,8 @@ Microtext.simpleFormat("Sef Sermak"); // returns "<p>Sef Sermak</p>"
 Microtext.simpleFormat("Sef Sermak", { className: "character" }); // returns "<p class='character'>Sef Sermak</p>"
 
 Microtext.excerpt("Who is John Galt?", "John"); // returns "...John Galt?..."
+
+Microtext.hideEmail("rodrigo@example.com"); // "rod...@example.com"
 ```
 
 ### String instance methods
@@ -65,7 +67,7 @@ Refer to [this blog post] if you don't know how to proceed before sending a Pull
 
 ## Licence
 
-Copyright (c) 2012 Rodrigo Alves Vieira. http://www.rodrigoalvesvieira.com/
+Copyright (c) 2012-2013 Rodrigo Alves Vieira. http://www.rodrigoalvesvieira.com/
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
