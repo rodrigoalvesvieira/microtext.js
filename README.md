@@ -65,6 +65,11 @@ You can contribute to Microtext.js by adding new text processing/helper function
 
 Refer to [this blog post] if you don't know how to proceed before sending a Pull Request.
 
+## Pay it forward
+
+If this project is so useful to you that you're considering making a donation to it, instead of paying me a beer (which would also be lovely), please
+consider donating to the [Khan Academy].
+
 ## Licence
 
 Copyright (c) 2012-2013 Rodrigo Alves Vieira. http://www.rodrigoalvesvieira.com/
@@ -87,3 +92,4 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 [this blog post]: http://www.rodrigoalvesvieira.com/how-to-contribute-open-source/
 [Contributions]: #contributions
+[Khan Academy]: https://www.khanacademy.org/
