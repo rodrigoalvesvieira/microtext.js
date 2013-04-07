@@ -1,6 +1,6 @@
 # microtext.js
 
-A micro JavaScript utility for processing text. Currently with only 9 functions.
+A micro JavaScript utility for processing text.
 
 NOTE: the purpose of this project is to provide simple and useful text processing functions to the web developer's toolset. Please read the [Contributions] section for more information about this.
 
