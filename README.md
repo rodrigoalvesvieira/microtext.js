@@ -35,6 +35,8 @@ Microtext.excerpt("Who is John Galt?", "John"); // returns "...John Galt?..."
 Microtext.hideEmail("rodrigo@example.com"); // "rod...@example.com"
 ```
 
+Refer to the [Wiki](https://github.com/rodrigoalvesvieira/microtext.js/wiki) for more information.
+
 ### String instance methods
 
 ```javascript
