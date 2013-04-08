@@ -94,7 +94,7 @@ Handlebars.registerHelper('hideEmail', function (email) {
     splitted = email.split("@");
     firstPart = splitted[0];
     avg = (firstPart.length / 2);
-    firstPart = firstPart.substring(0, (firstPart.length - avg))
+    firstPart = firstPart.substring(0, (firstPart.length - avg));
     secondPart = splitted[1];
 
     finalStr = firstPart + "...@" + secondPart;
