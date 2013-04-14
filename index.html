@@ -1,42 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="robots" content="all">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="Rodrigo Alves Vieira">
-    <meta name="description" content="A micro JavaScript utility for processing text">
-    <meta name="copyright" content="Copyright (c) 2012-2013 Rodrigo Alves Vieira">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Microtext.js by rodrigoalvesvieira</title>
 
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <title>Microtext.js by rodrigoalvesvieira</title>
   </head>
-
   <body>
-    <header>
-      <div class="inner">
+    <div class="wrapper">
+      <header>
         <h1>Microtext.js</h1>
-        <h2>A micro JavaScript utility for processing text</h2>
-        <a href="https://github.com/rodrigoalvesvieira/microtext.js" class="button"><small>View project on</small>GitHub</a>
-      </div>
-    </header>
+        <p>A micro JavaScript utility for processing text</p>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h1>microtext.js</h1>
+        <p class="view"><a href="https://github.com/rodrigoalvesvieira/microtext.js">View the Project on GitHub <small>rodrigoalvesvieira/microtext.js</small></a></p>
 
-<p>A micro JavaScript utility for processing text. Currently with only seven functions.</p>
 
-<p>Note: this library is only beginning and the author intends to make a great set of text utilities within it yet. Keep up.</p>
+        <ul>
+          <li><a href="https://github.com/rodrigoalvesvieira/microtext.js/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/rodrigoalvesvieira/microtext.js/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/rodrigoalvesvieira/microtext.js">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>microtext.js</h1>
+
+<p>A micro JavaScript utility for processing text.</p>
+
+<p>NOTE: the purpose of this project is to provide simple and useful text processing functions to the web developer's toolset. Please read the <a href="#contributions">Contributions</a> section for more information about this.</p>
+
+<p><a href="http://travis-ci.org/rodrigoalvesvieira/microtext.js"><img src="https://secure.travis-ci.org/rodrigoalvesvieira/microtext.js.png" alt="Build Status"></a></p>
 
 <h2>Usage</h2>
 
@@ -57,7 +55,7 @@
 
 <span class="nx">Microtext</span><span class="p">.</span><span class="nx">capitalize</span><span class="p">(</span><span class="s2">"foundation"</span><span class="p">);</span> <span class="c1">// "Foundation"</span>
 
-<span class="nx">Microtext</span><span class="p">.</span><span class="nx">simpleFormat</span><span class="p">(</span><span class="s2">"Sef Sermak"</span><span class="p">);</span> <span class="c1">// "<p>Sef Sermak</p>"</span>
+<span class="nx">Microtext</span><span class="p">.</span><span class="nx">simpleFormat</span><span class="p">(</span><span class="s2">"Sef Sermak"</span><span class="p">);</span> <span class="c1">// returns "&lt;p&gt;Sef Sermak&lt;/p&gt;"</span>
 
 <span class="nx">Microtext</span><span class="p">.</span><span class="nx">simpleFormat</span><span class="p">(</span><span class="s2">"Sef Sermak"</span><span class="p">,</span> <span class="p">{</span> <span class="nx">className</span><span class="o">:</span> <span class="s2">"character"</span> <span class="p">});</span> <span class="c1">// returns "&lt;p class='character'&gt;Sef Sermak&lt;/p&gt;"</span>
 
@@ -66,12 +64,14 @@
 <span class="nx">Microtext</span><span class="p">.</span><span class="nx">hideEmail</span><span class="p">(</span><span class="s2">"rodrigo@example.com"</span><span class="p">);</span> <span class="c1">// "rod...@example.com"</span>
 </pre></div>
 
+<p>Refer to the <a href="https://github.com/rodrigoalvesvieira/microtext.js/wiki">Wiki</a> for more information.</p>
+
 <h3>String instance methods</h3>
 
 <div class="highlight"><pre>
 <span class="s2">"Anselm haut Rodric"</span><span class="p">.</span><span class="nx">nameAt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="c1">// "Rodric"</span>
-<span class="s2">"Anselm haut Rodric"</span><span class="p">.</span><span class="nx">nameAt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="c1">// undefined</span>
 
+<span class="s2">"Anselm haut Rodric"</span><span class="p">.</span><span class="nx">nameAt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="c1">// undefined</span>
 </pre></div>
 
 <h3>Handlebars.js</h3>
@@ -82,7 +82,6 @@
 <span class="p">{{</span> <span class="n">getInitials</span> <span class="s2">"Isaac Newton"</span> <span class="p">}}</span>
 
 <span class="p">{{</span> <span class="n">abbrevName</span> <span class="s2">"Albert Einstein"</span> <span class="p">}}</span>
-
 </pre></div>
 
 <h2>Author</h2>
@@ -90,7 +89,13 @@
 <ul>
 <li>Rodrigo Alves Vieira - rodrigovieira1994 [at] gmail [dot] com - <a href="http://www.rodrigoalvesvieira.com">http://www.rodrigoalvesvieira.com</a>
 </li>
-</ul><h2>Licence</h2>
+</ul><h2>Contributions</h2>
+
+<p>You can contribute to Microtext.js by adding new text processing/helper functions or by improving the existing ones as well as fixing eventual bugs. In any case, your contribution is totally welcome.</p>
+
+<p>Refer to <a href="http://www.rodrigoalvesvieira.com/how-to-contribute-open-source/">this blog post</a> if you don't know how to proceed before sending a Pull Request.</p>
+
+<h2>Licence</h2>
 
 <p>Copyright (c) 2012-2013 Rodrigo Alves Vieira. <a href="http://www.rodrigoalvesvieira.com/">http://www.rodrigoalvesvieira.com/</a></p>
 
@@ -109,26 +114,14 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
-        </section>
-
-        <aside id="sidebar">
-          <a href="https://github.com/rodrigoalvesvieira/microtext.js/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/rodrigoalvesvieira/microtext.js/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/rodrigoalvesvieira/microtext.js"></a> is maintained by <a href="https://github.com/rodrigoalvesvieira">rodrigoalvesvieira</a>.</p>
-
-          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/rodrigoalvesvieira">rodrigoalvesvieira</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
-
-            <script type="text/javascript">
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
