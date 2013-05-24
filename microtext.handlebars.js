@@ -1,7 +1,7 @@
 /**
  * Microtext.js
  *
- * Copyright 2012-2013, Rodrigo Alves Vieira
+ * Copyright 2012-2013, Rodrigo Alves
  * Licensed under MIT
  *
 */

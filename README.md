@@ -59,7 +59,7 @@ Microtext.js functions can also be used as plain Handlebars.js helpers:
 
 ## Author
 
-  * Rodrigo Alves Vieira - rodrigovieira1994 [at] gmail [dot] com - http://www.rodrigoalvesvieira.com
+  * Rodrigo Alves - rodrigovieira1994 [at] gmail [dot] com - http://www.rodrigoalvesvieira.com
 
 ## Contributions
 
@@ -69,7 +69,7 @@ Refer to [this blog post] if you don't know how to proceed before sending a Pull
 
 ## Licence
 
-Copyright (c) 2012-2013 Rodrigo Alves Vieira. http://www.rodrigoalvesvieira.com/
+Copyright (c) 2012-2013 Rodrigo Alves. http://www.rodrigoalvesvieira.com/
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
