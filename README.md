@@ -69,7 +69,7 @@ Refer to [this blog post] if you don't know how to proceed before sending a Pull
 
 ## Licence
 
-Copyright (c) 2012-2013 Rodrigo Alves. http://www.rodrigoalvesvieira.com/
+Copyright (c) 2012-2013 Rodrigo Alves
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
