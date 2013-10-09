@@ -1,0 +1,15 @@
+{
+  "name": "microtext.js",
+  "version": "1.0.0",
+  "author": {
+    "name": "Rodrigo alves",
+    "email": "rodrigovieira1994@gmail.com"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "jasmine-node": "~1.11.0",
+    "jslint": "~0.1.9",
+    "uglify-js": "~2.4.0",
+    "grunt-contrib-jshint": "~0.6.4"
+  }
+}

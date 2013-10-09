@@ -61,10 +61,18 @@ Microtext.js functions can also be used as plain Handlebars.js helpers:
 
 ## Checking for code quality
 
-Microtext.js was written to be 100% passed by JSLint with no flags. So you can try:
+Microtext.js was written to be 100% passed by [JSLint]() with no flags. So you can try:
 
 ```javascript
 $ jsint microtext.js
+```
+
+Also, you can run [JSHint]() on the project via [Grunt]():
+
+```javascript
+$ cd microtext.js
+
+$ grunt
 ```
 
 ## Author
