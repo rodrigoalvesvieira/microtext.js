@@ -1,8 +1,10 @@
 # microtext.js
 
-A micro JavaScript utility for processing text. Currently with only seven functions.
+A micro JavaScript utility for processing text.
 
-Note: this library is only beginning and the author intends to make a great set of text utilities within it yet. Keep up.
+NOTE: the purpose of this project is to provide simple and useful text processing functions to the web developer's toolset. Please read the [Contributions] section for more information about this.
+
+[![Build Status](https://secure.travis-ci.org/rodrigoalvesvieira/microtext.js.png)](http://travis-ci.org/rodrigoalvesvieira/microtext.js)
 
 ## Usage
 
@@ -28,15 +30,22 @@ Microtext.simpleFormat("Sef Sermak"); // returns "<p>Sef Sermak</p>"
 
 Microtext.simpleFormat("Sef Sermak", { className: "character" }); // returns "<p class='character'>Sef Sermak</p>"
 
+Microtext.excerpt("Who is John Galt?", "John"); // returns "...John Galt?..."
+
+Microtext.hideEmail("rodrigo@example.com"); // "rod...@example.com"
+
+Microtext.parameterize("It was childish to feel disappointed"); // "it-was-childish-to-feel-disappointed"
 ```
+
+Refer to the [Wiki](https://github.com/rodrigoalvesvieira/microtext.js/wiki) for more information.
 
 ### String instance methods
 
 ```javascript
 
 "Anselm haut Rodric".nameAt(2) // "Rodric"
-"Anselm haut Rodric".nameAt(3) // undefined
 
+"Anselm haut Rodric".nameAt(3) // undefined
 ```
 
 ### Handlebars.js
@@ -48,29 +57,31 @@ Microtext.js functions can also be used as plain Handlebars.js helpers:
 {{ getInitials "Isaac Newton" }}
 
 {{ abbrevName "Albert Einstein" }}
+```
 
+## Checking for code quality
+
+Microtext.js was written to be 100% passed by JSLint with no flags. So you can try:
+
+```javascript
+$ jsint microtext.js
 ```
 
 ## Author
 
   * Rodrigo Alves - rodrigovieira1994 [at] gmail [dot] com - http://www.rodrigoalvesvieira.com
 
+## Contributions
+
+You can contribute to Microtext.js by adding new text processing/helper functions or by improving the existing ones as well as fixing eventual bugs. In any case, your contribution is totally welcome.
+
+Refer to [this blog post] if you don't know how to proceed before sending a Pull Request.
+
 ## Licence
+
+Released under the MIT License. See LICENSE.txt for details.
 
 Copyright (c) 2012-2013 Rodrigo Alves
 
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-"Software"), to use, copy and modify copies of the Software, subject
-to the following conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+[this blog post]: http://www.rodrigoalvesvieira.com/how-to-contribute-open-source/
+[Contributions]: #contributions
