@@ -33,6 +33,8 @@ Microtext.simpleFormat("Sef Sermak", { className: "character" }); // returns "<p
 Microtext.excerpt("Who is John Galt?", "John"); // returns "...John Galt?..."
 
 Microtext.hideEmail("rodrigo@example.com"); // "rod...@example.com"
+
+Microtext.parameterize("It was childish to feel disappointed"); // "it-was-childish-to-feel-disappointed"
 ```
 
 Refer to the [Wiki](https://github.com/rodrigoalvesvieira/microtext.js/wiki) for more information.
@@ -55,6 +57,14 @@ Microtext.js functions can also be used as plain Handlebars.js helpers:
 {{ getInitials "Isaac Newton" }}
 
 {{ abbrevName "Albert Einstein" }}
+```
+
+## Checking for code quality
+
+Microtext.js was written to be 100% passed by JSLint with no flags. So you can try:
+
+```javascript
+$ jsint microtext.js
 ```
 
 ## Author

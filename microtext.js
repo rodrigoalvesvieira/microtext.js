@@ -226,3 +226,18 @@ Microtext.hideEmail = function (email) {
     finalStr = firstPart + "...@" + secondPart;
     return finalStr;
 };
+
+/**
+* @module microtext
+ * @method parameterize
+ * @param {String} the string to be parameterized
+ * @return {String} the parameterized string
+ *
+ * Example:
+ * "It was childish to feel disappointed" becomes "it-was-childish-to-feel-disappointed"
+ *
+*/
+Microtext.parameterize = function (string) {
+    "use strict";
+    return string.toLowerCase().replace(/\s/g, "-");
+};

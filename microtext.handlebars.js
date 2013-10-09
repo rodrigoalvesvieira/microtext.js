@@ -100,3 +100,8 @@ Handlebars.registerHelper('hideEmail', function (email) {
     finalStr = firstPart + "...@" + secondPart;
     return finalStr;
 });
+
+Handlebars.registerHelper('parameterize', function (string) {
+    "use strict";
+    return string.toLowerCase().replace(/\s/g, "-");
+});
