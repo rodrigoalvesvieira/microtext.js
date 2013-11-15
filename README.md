@@ -64,7 +64,7 @@ Microtext.js functions can also be used as plain Handlebars.js helpers:
 Microtext.js was written to be 100% passed by [JSLint]() with no flags. So you can try:
 
 ```javascript
-$ jsint microtext.js
+$ jslint microtext.js
 ```
 
 Also, you can run [JSHint]() on the project via [Grunt]():
