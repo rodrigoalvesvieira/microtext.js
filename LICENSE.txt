@@ -1,6 +1,6 @@
 Licence
 
-Copyright (c) 2012-2013 Rodrigo Alves
+Copyright (c) 2012-2014 Rodrigo Alves
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to use, copy and modify copies of the Software, subject to the following conditions:
 

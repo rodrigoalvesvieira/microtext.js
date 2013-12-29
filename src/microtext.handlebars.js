@@ -1,7 +1,7 @@
 /**
  * Microtext.js
  *
- * Copyright 2012-2013, Rodrigo Alves
+ * Copyright 2012-2014, Rodrigo Alves
  * Licensed under MIT
  *
 */
@@ -104,4 +104,20 @@ Handlebars.registerHelper('hideEmail', function (email) {
 Handlebars.registerHelper('parameterize', function (string) {
     "use strict";
     return string.toLowerCase().replace(/\s/g, "-");
+});
+
+Handlebars.registerHelper('hideBadWord', function (word) {
+    "use strict";
+    var i, rand, answer = word[0], replacements = ["@", "!", "$", "#", "&", "*"];
+
+    for (i = 1; i < word.length - 1; i += 1) {
+        rand = Math.floor(Math.random() * replacements.length - 1) + 1;
+        if (word.charAt(i) === " ") {
+            answer += " ";
+        } else {
+            answer += replacements[rand];
+        }
+    }
+
+    return answer;
 });

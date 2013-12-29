@@ -35,6 +35,8 @@ Microtext.excerpt("Who is John Galt?", "John"); // returns "...John Galt?..."
 Microtext.hideEmail("rodrigo@example.com"); // "rod...@example.com"
 
 Microtext.parameterize("It was childish to feel disappointed"); // "it-was-childish-to-feel-disappointed"
+
+
 ```
 
 Refer to the [Wiki](https://github.com/rodrigoalvesvieira/microtext.js/wiki) for more information.
@@ -75,9 +77,17 @@ $ cd microtext.js
 $ grunt
 ```
 
+## Build
+
+Generate the minified version of Microtext, a.k.a `microtext.min.js`
+
+```shell
+$ uglifyjs src/microtext.js --screw-ie8
+```
+
 ## Author
 
-  * Rodrigo Alves - rodrigovieira1994 [at] gmail [dot] com - http://www.rodrigoalvesvieira.com
+  * Rodrigo Alves - rodrigovieira1994 [at] gmail [dot] com
 
 ## Contributions
 
@@ -89,7 +99,7 @@ Refer to [this blog post] if you don't know how to proceed before sending a Pull
 
 Released under the MIT License. See LICENSE.txt for details.
 
-Copyright (c) 2012-2013 Rodrigo Alves
+Copyright (c) 2012-2014 Rodrigo Alves
 
 [this blog post]: http://www.rodrigoalvesvieira.com/how-to-contribute-open-source/
 [Contributions]: #contributions

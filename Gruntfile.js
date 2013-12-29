@@ -1,5 +1,5 @@
 /*
- * Copyright 2012-2013, All Rights Reserved.
+ * Copyright 2012-2014, All Rights Reserved.
  * Released under the MIT License. See LICENSE.txt for details.
  *
  * @author Rodrigo Alves <rodrigovieira1994@gmail.com>
