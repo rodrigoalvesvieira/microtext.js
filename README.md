@@ -36,7 +36,7 @@ Microtext.hideEmail("rodrigo@example.com"); // "rod...@example.com"
 
 Microtext.parameterize("It was childish to feel disappointed"); // "it-was-childish-to-feel-disappointed"
 
-
+Microtext.hideBadWord("Bitch!"); // "B!#&&"
 ```
 
 Refer to the [Wiki](https://github.com/rodrigoalvesvieira/microtext.js/wiki) for more information.
