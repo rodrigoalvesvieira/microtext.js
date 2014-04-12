@@ -103,7 +103,7 @@ Handlebars.registerHelper('hideEmail', function (email) {
 
 Handlebars.registerHelper('parameterize', function (string) {
     "use strict";
-    return string.toLowerCase().replace(/\s/g, "-");
+    return string.trim().toLowerCase().replace(".", "").replace(/\s/g, "-");
 });
 
 Handlebars.registerHelper('hideBadWord', function (word) {
