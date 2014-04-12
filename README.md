@@ -82,7 +82,7 @@ $ grunt
 Generate the minified version of Microtext, a.k.a `microtext.min.js`
 
 ```shell
-$ uglifyjs src/microtext.js --screw-ie8
+$ uglifyjs src/microtext.js --screw-ie8 > dist/microtext.min.js
 ```
 
 ## Author

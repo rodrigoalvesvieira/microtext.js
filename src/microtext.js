@@ -239,7 +239,7 @@ Microtext.hideEmail = function (email) {
 */
 Microtext.parameterize = function (string) {
     "use strict";
-    return string.trim().toLowerCase().replace(".", "").replace(/\s/g, "-");
+    return string.trim().toLowerCase().replace(/[^a-zA-Z0-9 -]/, "").replace(/\s/g, "-");
 };
 
 /**
