@@ -28,13 +28,15 @@ Microtext.capitalize("foundation"); // "Foundation"
 
 Microtext.simpleFormat("Sef Sermak"); // returns "<p>Sef Sermak</p>"
 
-Microtext.simpleFormat("Sef Sermak", { className: "character" }); // returns "<p class='character'>Sef Sermak</p>"
+Microtext.simpleFormat("Sef Sermak", { className: "character" });
+// returns "<p class='character'>Sef Sermak</p>"
 
 Microtext.excerpt("Who is John Galt?", "John"); // returns "...John Galt?..."
 
 Microtext.hideEmail("rodrigo@example.com"); // "rod...@example.com"
 
-Microtext.parameterize("It was childish to feel disappointed"); // "it-was-childish-to-feel-disappointed"
+Microtext.parameterize("It was childish to feel disappointed");
+// "it-was-childish-to-feel-disappointed"
 
 Microtext.hideBadWord("Bitch!"); // "B!#&&"
 ```
