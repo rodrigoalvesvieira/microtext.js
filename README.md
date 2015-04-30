@@ -8,6 +8,7 @@ NOTE: the purpose of this project is to provide simple and useful text processin
 
 ## Usage
 
+
 ### Microtext object functions:
 
 ```javascript
