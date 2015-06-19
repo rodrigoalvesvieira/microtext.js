@@ -2,6 +2,8 @@
 
 A micro JavaScript utility for processing text.
 
+UPDATE: Microtext.js is now available as an Angular.js module https://github.com/rodrigoalvesvieira/angular-microtext
+
 NOTE: the purpose of this project is to provide simple and useful text processing functions to the web developer's toolset. Please read the [Contributions] section for more information about this.
 
 [![Build Status](https://secure.travis-ci.org/rodrigoalvesvieira/microtext.js.png)](http://travis-ci.org/rodrigoalvesvieira/microtext.js)
