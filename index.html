@@ -3,31 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Microtext.js by Rodrigo Alves (rodrigoalvesvieira)</title>
+    <title>Microtext.js by rodrigoalvesvieira</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body>
     <div class="wrapper">
+      <header>
+        <h1>Microtext.js</h1>
+        <p>A micro JavaScript utility for processing text</p>
 
-      <script type="text/javascript"><!--
-            google_ad_client = "ca-pub-3747531992782166";
-            /* Big Box */
-            google_ad_slot = "9267872335";
-            google_ad_width = 300;
-            google_ad_height = 250;
-            //-->
-        </script>
-
-        <script type="text/javascript" src="//pagead2.googlesyndication.com/pagead/show_ads.js"> </script>
-      </div>
-
-      <!-- <header>
         <p class="view"><a href="https://github.com/rodrigoalvesvieira/microtext.js">View the Project on GitHub <small>rodrigoalvesvieira/microtext.js</small></a></p>
 
 
@@ -37,9 +27,9 @@
           <li><a href="https://github.com/rodrigoalvesvieira/microtext.js">View On <strong>GitHub</strong></a></li>
         </ul>
       </header>
- -->
       <section>
-        <h1><a href="https://github.com/rodrigoalvesvieira/microtext.js">microtext.js</a></h1>
+        <h1>
+<a id="microtextjs" class="anchor" href="#microtextjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>microtext.js</h1>
 
 <p>A micro JavaScript utility for processing text.</p>
 
@@ -47,71 +37,74 @@
 
 <p><a href="http://travis-ci.org/rodrigoalvesvieira/microtext.js"><img src="https://secure.travis-ci.org/rodrigoalvesvieira/microtext.js.png" alt="Build Status"></a></p>
 
-<h2>Usage</h2>
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
 
-<h3>Microtext object functions:</h3>
+<h3>
+<a id="microtext-object-functions" class="anchor" href="#microtext-object-functions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Microtext object functions:</h3>
 
-<div class="highlight"><pre>
-<span class="nx">Microtext</span><span class="p">.</span><span class="nx">breakSentence</span><span class="p">(</span><span class="s2">"Gaal Dornick"</span><span class="p">);</span> <span class="c1">// ["Gaal", "Dornick"]</span>
+<div class="highlight highlight-source-js"><pre>
+<span class="pl-smi">Microtext</span>.<span class="pl-en">breakSentence</span>(<span class="pl-s"><span class="pl-pds">"</span>Gaal Dornick<span class="pl-pds">"</span></span>); <span class="pl-c">// ["Gaal", "Dornick"]</span>
 
-<span class="nx">Microtext</span><span class="p">.</span><span class="nx">truncate</span><span class="p">(</span><span class="s2">"Lewis Pirenne"</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="c1">// "Lewis Pire..."</span>
+<span class="pl-smi">Microtext</span>.<span class="pl-en">truncate</span>(<span class="pl-s"><span class="pl-pds">"</span>Lewis Pirenne<span class="pl-pds">"</span></span>, <span class="pl-c1">10</span>) <span class="pl-c">// "Lewis Pire..."</span>
 
-<span class="nx">Microtext</span><span class="p">.</span><span class="nx">abbrevName</span><span class="p">(</span><span class="s2">"Hari Seldon"</span><span class="p">);</span> <span class="c1">// "Hari S."</span>
+<span class="pl-smi">Microtext</span>.<span class="pl-en">abbrevName</span>(<span class="pl-s"><span class="pl-pds">"</span>Hari Seldon<span class="pl-pds">"</span></span>); <span class="pl-c">// "Hari S."</span>
 
-<span class="nx">Microtext</span><span class="p">.</span><span class="nx">firstName</span><span class="p">(</span><span class="s2">"Lors Avakim"</span><span class="p">);</span> <span class="c1">// "Lors"</span>
+<span class="pl-smi">Microtext</span>.<span class="pl-en">firstName</span>(<span class="pl-s"><span class="pl-pds">"</span>Lors Avakim<span class="pl-pds">"</span></span>); <span class="pl-c">// "Lors"</span>
 
-<span class="nx">Microtext</span><span class="p">.</span><span class="nx">lastName</span><span class="p">(</span><span class="s2">"Salvor Hardin"</span><span class="p">);</span> <span class="c1">// "Hardin"</span>
+<span class="pl-smi">Microtext</span>.<span class="pl-en">lastName</span>(<span class="pl-s"><span class="pl-pds">"</span>Salvor Hardin<span class="pl-pds">"</span></span>); <span class="pl-c">// "Hardin"</span>
 
-<span class="nx">Microtext</span><span class="p">.</span><span class="nx">getInitials</span><span class="p">(</span><span class="s2">"Bor Alurin"</span><span class="p">);</span> <span class="c1">// "B. A"</span>
+<span class="pl-smi">Microtext</span>.<span class="pl-en">getInitials</span>(<span class="pl-s"><span class="pl-pds">"</span>Bor Alurin<span class="pl-pds">"</span></span>); <span class="pl-c">// "B. A"</span>
 
-<span class="nx">Microtext</span><span class="p">.</span><span class="nx">capitalize</span><span class="p">(</span><span class="s2">"foundation"</span><span class="p">);</span> <span class="c1">// "Foundation"</span>
+<span class="pl-smi">Microtext</span>.<span class="pl-en">capitalize</span>(<span class="pl-s"><span class="pl-pds">"</span>foundation<span class="pl-pds">"</span></span>); <span class="pl-c">// "Foundation"</span>
 
-<span class="nx">Microtext</span><span class="p">.</span><span class="nx">simpleFormat</span><span class="p">(</span><span class="s2">"Sef Sermak"</span><span class="p">);</span> <span class="c1">// returns "&lt;p&gt;Sef Sermak&lt;/p&gt;"</span>
+<span class="pl-smi">Microtext</span>.<span class="pl-en">simpleFormat</span>(<span class="pl-s"><span class="pl-pds">"</span>Sef Sermak<span class="pl-pds">"</span></span>); <span class="pl-c">// returns "&lt;p&gt;Sef Sermak&lt;/p&gt;"</span>
 
-<span class="nx">Microtext</span><span class="p">.</span><span class="nx">simpleFormat</span><span class="p">(</span><span class="s2">"Sef Sermak"</span><span class="p">,</span> <span class="p">{</span> <span class="nx">className</span><span class="o">:</span> <span class="s2">"character"</span> <span class="p">});</span> <span class="c1">// returns "&lt;p class='character'&gt;Sef Sermak&lt;/p&gt;"</span>
+<span class="pl-smi">Microtext</span>.<span class="pl-en">simpleFormat</span>(<span class="pl-s"><span class="pl-pds">"</span>Sef Sermak<span class="pl-pds">"</span></span>, { className<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>character<span class="pl-pds">"</span></span> }); <span class="pl-c">// returns "&lt;p class='character'&gt;Sef Sermak&lt;/p&gt;"</span>
 
-<span class="nx">Microtext</span><span class="p">.</span><span class="nx">excerpt</span><span class="p">(</span><span class="s2">"Who is John Galt?"</span><span class="p">,</span> <span class="s2">"John"</span><span class="p">);</span> <span class="c1">// returns "...John Galt?..."</span>
+<span class="pl-smi">Microtext</span>.<span class="pl-en">excerpt</span>(<span class="pl-s"><span class="pl-pds">"</span>Who is John Galt?<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>John<span class="pl-pds">"</span></span>); <span class="pl-c">// returns "...John Galt?..."</span>
 
-<span class="nx">Microtext</span><span class="p">.</span><span class="nx">hideEmail</span><span class="p">(</span><span class="s2">"rodrigo@example.com"</span><span class="p">);</span> <span class="c1">// "rod...@example.com"</span>
-
-<span class="nx">Microtext</span><span class="p">.</span><span class="nx">parameterize</span><span class="p">(</span><span class="s2">"It was childish to feel disappointed"</span><span class="p">);</span> <span class="c1">// "it-was-childish-to-feel-disappointed"</span>
-
-</pre></div>
+<span class="pl-smi">Microtext</span>.<span class="pl-en">hideEmail</span>(<span class="pl-s"><span class="pl-pds">"</span>rodrigo@example.com<span class="pl-pds">"</span></span>); <span class="pl-c">// "rod...@example.com"</span></pre></div>
 
 <p>Refer to the <a href="https://github.com/rodrigoalvesvieira/microtext.js/wiki">Wiki</a> for more information.</p>
 
-<h3>String instance methods</h3>
+<h3>
+<a id="string-instance-methods" class="anchor" href="#string-instance-methods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>String instance methods</h3>
 
-<div class="highlight"><pre>
-<span class="s2">"Anselm haut Rodric"</span><span class="p">.</span><span class="nx">nameAt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="c1">// "Rodric"</span>
+<div class="highlight highlight-source-js"><pre>
+<span class="pl-s"><span class="pl-pds">"</span>Anselm haut Rodric<span class="pl-pds">"</span></span>.<span class="pl-en">nameAt</span>(<span class="pl-c1">2</span>) <span class="pl-c">// "Rodric"</span>
 
-<span class="s2">"Anselm haut Rodric"</span><span class="p">.</span><span class="nx">nameAt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="c1">// undefined</span>
-</pre></div>
+<span class="pl-s"><span class="pl-pds">"</span>Anselm haut Rodric<span class="pl-pds">"</span></span>.<span class="pl-en">nameAt</span>(<span class="pl-c1">3</span>) <span class="pl-c">// undefined</span></pre></div>
 
-<h3>Handlebars.js</h3>
+<h3>
+<a id="handlebarsjs" class="anchor" href="#handlebarsjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Handlebars.js</h3>
 
 <p>Microtext.js functions can also be used as plain Handlebars.js helpers:</p>
 
-<div class="highlight"><pre>
-<span class="p">{{</span> <span class="n">getInitials</span> <span class="s2">"Isaac Newton"</span> <span class="p">}}</span>
+<div class="highlight highlight-source-ruby"><pre>
+{{ getInitials <span class="pl-s"><span class="pl-pds">"</span>Isaac Newton<span class="pl-pds">"</span></span> }}
 
-<span class="p">{{</span> <span class="n">abbrevName</span> <span class="s2">"Albert Einstein"</span> <span class="p">}}</span>
-</pre></div>
+{{ abbrevName <span class="pl-s"><span class="pl-pds">"</span>Albert Einstein<span class="pl-pds">"</span></span> }}</pre></div>
 
-<h2>Author</h2>
+<h2>
+<a id="author" class="anchor" href="#author" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Author</h2>
 
 <ul>
-<li>Rodrigo Alves - rodrigovieira1994 [at] gmail [dot] com - <a href="http://www.rodrigoalvesvieira.com">http://www.rodrigoalvesvieira.com</a>
+<li>Rodrigo Alves Vieira - rodrigovieira1994 [at] gmail [dot] com - <a href="http://www.rodrigoalvesvieira.com">http://www.rodrigoalvesvieira.com</a>
 </li>
-</ul><h2>Contributions</h2>
+</ul>
+
+<h2>
+<a id="contributions" class="anchor" href="#contributions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributions</h2>
 
 <p>You can contribute to Microtext.js by adding new text processing/helper functions or by improving the existing ones as well as fixing eventual bugs. In any case, your contribution is totally welcome.</p>
 
 <p>Refer to <a href="http://www.rodrigoalvesvieira.com/how-to-contribute-open-source/">this blog post</a> if you don't know how to proceed before sending a Pull Request.</p>
 
-<h2>Licence</h2>
+<h2>
+<a id="licence" class="anchor" href="#licence" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Licence</h2>
 
-<p>Copyright (c) 2012-2013 Rodrigo Alves. <a href="http://www.rodrigoalvesvieira.com/">http://www.rodrigoalvesvieira.com/</a></p>
+<p>Copyright (c) 2012-2013 Rodrigo Alves Vieira. <a href="http://www.rodrigoalvesvieira.com/">http://www.rodrigoalvesvieira.com/</a></p>
 
 <p>Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -129,11 +122,22 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
       </section>
-
       <footer>
-        <p>This project is maintained by <a href="https://github.com/rodrigoalvesvieira">Rodrigo Alves</a></p>
+        <p>This project is maintained by <a href="https://github.com/rodrigoalvesvieira">rodrigoalvesvieira</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-35246742-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
   </body>
 </html>
