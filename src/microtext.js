@@ -263,3 +263,35 @@ Microtext.hideBadWord = function (word) {
 
     return answer;
 };
+
+
+/**
+* @module microtext
+ * @method ordinal
+ * @param {number}
+ * @return {String} ordinal number
+*/
+Microtext.ordinal = function (num) {
+    "use strict";
+    var result = String(num);
+
+    if ([11, 12, 13].indexOf(num) !== -1) {
+        result += 'th';
+    }else {
+        switch (result[result.length - 1]) {
+            case '1':
+                result += 'st';
+                break;
+            case '2':
+                result += 'nd';
+                break;
+            case '3':
+                result += 'rd';
+                break;
+            default:
+                result += 'th';
+        }
+    }
+
+    return result;
+};

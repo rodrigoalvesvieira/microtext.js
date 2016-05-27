@@ -42,6 +42,8 @@ Microtext.parameterize("It was childish to feel disappointed");
 // "it-was-childish-to-feel-disappointed"
 
 Microtext.hideBadWord("Bitch!"); // "B!#&&"
+
+Microtext.ordinal(11243); // "11243rd"
 ```
 
 Refer to the [Wiki](https://github.com/rodrigoalvesvieira/microtext.js/wiki) for more information.
