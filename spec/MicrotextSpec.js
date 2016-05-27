@@ -112,4 +112,19 @@ describe("Microtext.js", function() {
       expect(Microtext.parameterize(sentence)).toEqual("jack-be-nimble-jack-be-kick");
     });
   });
+
+  describe("#ordinal", function() {
+    it("should return a string with ordinal number", function() {
+      var num = 11;
+
+      expect(Microtext.ordinal(num)).toBeDefined();
+      expect(Microtext.ordinal(num)).toEqual("11th");
+      expect(Microtext.ordinal(12)).toEqual("12th");
+      expect(Microtext.ordinal(13)).toEqual("13th");
+      expect(Microtext.ordinal(1328745671)).toEqual("1328745671st");
+      expect(Microtext.ordinal(123123)).toEqual("123123rd");
+      expect(Microtext.ordinal(9123472)).toEqual("9123472nd");
+      expect(Microtext.ordinal(13123123124)).toEqual("13123123124th");
+    });
+  });
 });

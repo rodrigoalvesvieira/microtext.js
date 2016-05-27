@@ -121,3 +121,29 @@ Handlebars.registerHelper('hideBadWord', function (word) {
 
     return answer;
 });
+
+Handlebars.registerHelper('ordinal', function (num) {
+    "use strict";
+    var result = String(num);
+
+    if ([11, 12, 13].indexOf(num) !== -1) {
+        result += 'th';
+    }else {
+        switch (result[result.length - 1]) {
+            case '1':
+                result += 'st';
+                break;
+            case '2':
+                result += 'nd';
+                break;
+            case '3':
+                result += 'rd';
+                break;
+            default:
+                result += 'th';
+        }
+    }
+
+    return result;
+});
+
